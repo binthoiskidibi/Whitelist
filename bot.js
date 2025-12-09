@@ -197,7 +197,7 @@ client.on('interactionCreate', async (interaction) => {
             let cooldownTime;
             let cooldownName;
             
-            if (memberReset.roles.cache.some(role => role.name === 'BETA | Dev')) {
+            if (memberReset.roles.cache.some(role => role.name === 'Support')) {
                 cooldownTime = 4 * 60 * 60 * 1000;
                 cooldownName = '4 hours';
             } else if (memberReset.roles.cache.some(role => role.name === 'Premium')) {
@@ -367,7 +367,7 @@ client.on('interactionCreate', async (interaction) => {
             const memberConfirm = await interaction.guild.members.fetch(userId);
             let cooldownDisplay;
             
-            if (memberConfirm.roles.cache.some(role => role.name === 'Whitelist')) {
+            if (memberConfirm.roles.cache.some(role => role.name === 'Support')) {
                 cooldownDisplay = '4 hours';
             } else if (memberConfirm.roles.cache.some(role => role.name === 'Premium')) {
                 cooldownDisplay = '2.5 days';
@@ -548,7 +548,7 @@ client.on('interactionCreate', async (interaction) => {
             break;
 
         case 'add_key':
-            const targetRoleName = 'BETA | Dev';
+            const targetRoleName = 'Support';
             const member = interaction.member;
             if (!member) {
                 return await interaction.reply({
