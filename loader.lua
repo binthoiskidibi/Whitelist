@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 
 
-local API_URL = "https://4fb4ad48-15f1-4fc1-b136-6fe244fbdc36-00-11xzf7zv4wcky.sisko.replit.dev"
+local API_URL = "https://4fb4ad48-15f1-4fc1-b136-6fe244fbdc36-00-11xzf7zv4wcky.sisko.replit.dev/"
 local maxRetries = 3
 local retryDelay = 2
 
@@ -121,4 +121,3 @@ else
     
     return false
 end
-
